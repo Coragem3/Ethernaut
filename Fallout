@@ -1,0 +1,4 @@
+await contract.Fal1out({value: 1234})
+
+
+await contract.sendAllocation(await contract.owner())
