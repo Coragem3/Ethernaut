@@ -1,0 +1,22 @@
+pragma solidity ^0.7.0;
+
+contract OUflows{
+
+    mapping(address=>uint) public balances;
+
+    constructor() public{
+        balances[msg.sender] =20;
+    }
+
+    function transfer(address _to, uint _value) public returns (bool){
+        require((balances[msg.sender] - _value) >= 0);
+        balances[msg.sender] -= _value;
+        balances[_to] += _value;
+        return true;
+
+    }
+
+function getPWNSIG() pure public returns(bytes memory){
+    return abi.encodeWithSignature("pwn()");
+}
+}
