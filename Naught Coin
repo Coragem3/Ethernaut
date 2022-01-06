@@ -1,0 +1,19 @@
+(await contract.balanceOf(player)).toString()
+"1000000000000000000000000"
+(await contract.allowance(player)).toString()
+(await contract.allowance(player, player)).toString()
+"0"
+await contract.approve(player, "1000000000000000000000000")
+⛏️ Sent transaction ⛏ https://rinkeby.etherscan.io/tx/0xaecc356a69767415839a272dbcd500677cef6a459eb33d208afb63012224e5b9 3ffb64a228b75ef702125340f1501e8f451777b4.js:1:4523728
+⛏️ Mined transaction ⛏ https://rinkeby.etherscan.io/tx/0xaecc356a69767415839a272dbcd500677cef6a459eb33d208afb63012224e5b9 3ffb64a228b75ef702125340f1501e8f451777b4.js:1:4523728
+Object { tx: "0xaecc356a69767415839a272dbcd500677cef6a459eb33d208afb63012224e5b9", receipt: {…}, logs: (1) […] }
+
+(await contract.allowance(player, player)).toString()
+"1000000000000000000000000"
+await contract.transferFrom(player, "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4", "1000000000000000000000000")
+⛏️ Sent transaction ⛏ https://rinkeby.etherscan.io/tx/0xda897aa2a6aec4a63a43d3eb766d69d9e73998720e4d414bec14a2eec101cc56 3ffb64a228b75ef702125340f1501e8f451777b4.js:1:4523728
+⛏️ Mined transaction ⛏ https://rinkeby.etherscan.io/tx/0xda897aa2a6aec4a63a43d3eb766d69d9e73998720e4d414bec14a2eec101cc56 3ffb64a228b75ef702125340f1501e8f451777b4.js:1:4523728
+Object { tx: "0xda897aa2a6aec4a63a43d3eb766d69d9e73998720e4d414bec14a2eec101cc56", receipt: {…}, logs: (2) […] }
+
+(await contract.balanceOf(player)).toString()
+"0"
